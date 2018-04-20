@@ -1,0 +1,773 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.menu{
+  background-color:#540657;
+}
+.menu>ul{
+  text-align: center;
+}
+.menu>ul:nth-child(2){
+  text-align: center;
+  padding: 20px 20px;
+}
+.menu>ul>li{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  height: 48px;
+  width: 100px;
+  transition: .3s;
+}
+ul{
+  list-style: none;
+}
+a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-family:  'Hi Melody', cursive;
+  font-size: 20px;
+  font-weight:bold;
+  transition:0.1s;
+  color: rgb(240, 232, 241);
+}
+.menu>ul>li>div{
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: .5s;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  border: rgb(103, 6, 129) solid 3px;
+}
+.menu>ul>li:hover>div, .menu>ul>li.Active>div{
+    width: 85%;
+    height: 33px;
+    opacity: 1;
+}
+li:hover, li.Active {
+  background-color:#e986d3;
+}
+h1{
+  background-color: #08D5C5;
+  text-align: center;
+  height: 80px;
+  padding: 20px;
+  font-size: 50px;
+}
+fondo{
+  position: absolute;
+  top:100px;
+  bottom: 0;
+  left:0px;
+  margin: auto;
+  float: left;
+  right: 0px;
+  background-color:   rgb(160, 147, 206);
+  width: 1366px;
+  height: 350px;
+}
+/* tamaño imagenes */
+div, div img{
+  width: 400px;
+  height: 250px;
+}
+
+/* ---------- */
+.uno1{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:0;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.uno1a{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left:800px;
+  margin: auto;
+  float: left;
+  right: 500px;
+  background-color: rgba(128, 121, 103, 0);
+  overflow: hidden;
+}
+.uno1>img,.uno1a>img{
+  position: absolute;
+  right: 0;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+.uno1:hover>img,.uno1a:hover>img{
+  transform: scale(1.3);
+  overflow: hidden;
+}
+.uno1>article,.uno1a>article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(202, 113, 117, 0.4);
+  width: 400px;
+  height: 250px;
+  transform: scale(0);
+  transition-duration: .5s;
+  overflow: hidden;
+}
+.uno1:hover>article,.uno1a:hover>article{
+  transform: scale(1);
+  transition-duration: .5s;
+}
+.uno1>article>h4,.uno1a>article>h4{
+  text-align: center;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(131, 6, 16);
+  margin-top: 20px;
+  font-size: 25px;
+  transform: translateY(-210px);
+  transition-duration: 0.6s;
+  transition-delay: .6s;
+  overflow: hidden;
+}
+.uno1:hover>article>h4,.uno1a:hover>article>h4{
+  transform: translateY(0);
+}
+.uno1>article>p,.uno1a>article>p{
+  text-align: justify;
+  padding: 15px 40px;
+  font-size: 14px;
+  margin-top: 4px;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(138, 6, 6);
+  transform: translateY(200px);
+  transition-duration: .6s;
+  transition-delay: .8s;
+}
+.uno1:hover>article>p,.uno1a:hover>article>p{
+  transform: translateY(0);
+}
+.uno1>article>a,.uno1a>article>a{
+  margin: 25px 150px;
+  margin-top: 180px;
+  background-color: rgb(245, 117, 117);
+  padding: 0;
+  color: rgb(131, 6, 16);
+  transform: scale(0);
+  transition-duration: 1s;
+  transition-delay: 1s;
+  font-family: 'Yeon Sung', cursive;
+}
+.uno1:hover>article>a,.uno1a:hover>article>a{
+  transform: scale(1);
+}
+
+.dos1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 50px 200px;
+  background-color: rgba(128, 121, 103, 0);
+  float: left;
+  overflow: hidden;
+}
+.dos1a{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 50px 800px;
+  background-color: rgba(128, 121, 103, 0);
+  float: left;
+  overflow: hidden;
+}
+.dos1>article,.dos1a>article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 400px;
+  height: 250px;
+  background-color: rgba(47, 185, 132, 0.4);
+  transform: rotate(90deg) translate(350px ,-350px);
+  transition-duration: .5s;
+  overflow: hidden;
+}
+.dos1:hover>article,.dos1a:hover>article{
+  transform: rotate(0deg) translate(0px);
+}
+.dos1>article>h4,.dos1a>article>h4{
+  text-align: center;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(10, 19, 71);
+  font-size: 25px;
+  padding:20px 20px;
+  transform: translate(280px,-60px) ;
+  transition-duration: .6s;
+  transition-delay: .6s ;
+}
+.dos1:hover>article>h4,.dos1a:hover>article>h4{
+  transform: translate(0px);
+}
+.dos1>article>p,.dos1a>article>p{
+  text-align: justify;
+  padding: 2px 25px;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(5, 53, 16);
+  font-size: 14px;
+  transform: translateX(-700px) translateY(150px);
+  transition-duration: .6s;
+  transition-delay: .6s;
+}
+.dos1:hover>article>p,.dos1a:hover>article>p{
+  transform: translateX(0px) translateX(0px);
+}
+.dos1>article>a,.dos1a:hover>article>a{
+  margin: 25px 150px;
+  margin-top: 180px;
+  padding: 0;
+  background-color: rgb(70, 235, 139);
+  color: rgb(10, 19, 71);
+  transform: translateY(160px);
+  transition-duration: .6s;
+  transition-delay: .6s;
+  font-family: 'Yeon Sung', cursive;
+}
+.dos1:hover>article>a,.dos1a:hover>article>a{
+  transform: translateY(0px);
+}
+
+.tres1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin:50px 150px;
+  float: left;
+  overflow: hidden;
+}
+.tres1a{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin:50px 800px;
+  float: left;
+  overflow: hidden;
+}
+.tres1>article,.tres1a>article{
+  position: absolute;
+  top:0px;
+  width: 400px;
+  height: 250px;
+  transform:  rotate(90deg)  translate(-326px,-325px);
+  background: rgba(209, 80, 235, 0.72);
+  transition-property: transform ;
+  transition-duration: .5s;
+  overflow: hidden;
+}
+.tres1:hover>article,.tres1a:hover>article{
+  transform: rotate(0)  translate(0);
+}
+.tres1>img,.tres1a>img{
+  position: absolute;
+  transform: scale(1) rotate(0) ;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.tres1:hover>img,.tres1a:hover>img{
+  transform: scale(1.3) rotate(5deg) ;
+}
+.tres1>article>h4,.tres1a>article>h4{
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(42, 5, 46);
+  transform:  rotate(-90deg)  translate(-326px,-325px);
+  transition-duration: .5s;
+  transition-delay: .5s ;
+}
+.tres1:hover>article>h4,.tres1a:hover>article>h4{
+  transform: rotate(0) translate(0);
+}
+.tres1>article>p,.tres1a>article>p{
+  text-align: justify;
+  padding: 15px 15px;
+  color: rgb(85, 3, 105);
+  font-size: 14px;
+  font-family: 'Yeon Sung', cursive;
+  transform: rotate(90deg)  translate(600px,-800px);
+  transition-duration: .4s;
+  transition-delay: .9s;
+}
+.tres1:hover>article>p,.tres1a:hover>article>p{
+  transform: rotate(0) translate(0);
+}
+.tres1>article>a,.tres1a>article>a{
+  margin: 25px 150px;
+  margin-top: 180px;
+  padding: 0;
+  background-color: rgb(226, 57, 136);
+  color: rgb(42, 5, 46);
+  transform:translateY(-700px);
+  transition-duration: .4s;
+  transition-delay: .9s;
+  font-family: 'Yeon Sung', cursive;
+}
+.tres1:hover>article>a,.tres1a:hover>article>a{
+  transform:  scale(1);
+}
+
+
+.cuatro1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin:60px 150px;
+  float: left;
+  overflow: hidden;
+}
+.cuatro1a{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin:60px 800px;
+  float: left;
+  overflow: hidden;
+}
+.cuatro1>article,.cuatro1a>article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(241, 122, 11, 0.600);
+  width: 100%;
+  height: 100%;
+  transform: scale(0) rotate(0deg);
+  transition-duration: .6s;
+  overflow: hidden;
+}
+.cuatro1:hover>article,.cuatro1a:hover>article{
+  transform:scale(1) rotate(720deg);
+}
+.cuatro1>article>h4,.cuatro1a>article>h4{
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(122, 14, 14);
+  font-size: 25px;
+  transform: translateX(280px);
+  transition-duration: .5s;
+  transition-delay: .5s; 
+}
+.cuatro1:hover>article>h4,.cuatro1a:hover>article>h4{
+  transform: translate(0);
+}
+.cuatro1>article>p,.cuatro1a>article>p{
+  text-align: justify;
+  padding: 20px 15px;
+  color: rgb(48, 19, 2);
+  font-size: 14px;
+  font-family: 'Yeon Sung', cursive;
+  transform: translateX(-400px);
+  transition-duration: .5s;
+  transition-delay: .5s;
+}
+.cuatro1:hover>article>p,.cuatro1a:hover>article>p{
+  transform: translate(0);
+}
+.cuatro1>article>a,.cuatro1a>article>a{
+  margin: 25px 150px;
+  margin-top: 180px;
+  padding: 0;
+  background-color: rgb(179, 76, 76);
+  color: rgb(122, 14, 14);
+  transform: translateY(300PX);
+  transition-duration: .5s;
+  transition-delay: .5s;
+  font-family: 'Yeon Sung', cursive;
+}
+.cuatro1:hover>article>a,.cuatro1a:hover>article>a{
+  transform: translate(0);
+}
+
+
+
+.cinco1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin:60px 150px;
+  float: left;
+  overflow: hidden;
+}
+.cinco1a{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin:60px 800px;
+  float: left;
+  overflow: hidden;
+}
+.cinco1>article,.cinco1a>article{
+  position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(64, 187, 240,0.4);
+    transform: translate(-350px ,350px);
+    transition-duration: .5s;
+    overflow: hidden;
+}
+.cinco1:hover>article,.cinco1a:hover>article{
+  transform:  translateY(0px);
+}
+.cinco1>article>h4,.cinco1a>article>h4{
+  text-align: center;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(5, 29, 51);
+  padding:20px 20px;
+  font-size: 25px;
+  transform: scale(0) rotate(360deg);
+  transition-duration: .2s;
+  transition-delay: 0.5s ;
+}
+.cinco1:hover>article>h4,.cinco1a:hover>article>h4{
+  transform: scale(1) rotate(0deg);
+
+}
+
+.cinco1>article>p,.cinco1a>article>p{
+  text-align: justify;
+  padding: 5px 15px;
+  font-family: 'Yeon Sung', cursive;
+  color: rgba(7, 20, 3, 0.781);
+  font-size: 14px;
+  transform: translate(-700px,390px);
+  transition-duration: .7s;
+  transition-delay: 1s;
+}
+
+.cinco1:hover>article>p,.cinco1a:hover>article>p{
+ transform: translateY(0px);
+
+}
+.cinco1>article>a,.cinco1a>article>a{
+  margin: 25px 150px;
+  margin-top: 180px;
+  padding: 0;
+  background-color: rgb(107, 114, 5);
+  color: rgb(5, 29, 51);
+  transform:scale(0) rotate(360deg);
+  transition-duration: .7s;
+  transition-delay:1s;
+  font-family: 'Yeon Sung', cursive;
+}
+.cinco1:hover>article>a,.cinco1a:hover>article>a{
+  transform: translateY(0px);
+  transform:scale(1) rotate(0deg);
+}
+
+
+.seis1{
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 60px 150px;
+    background-color: rgba(218, 22, 22, 0);
+    float: left;
+    overflow: hidden;
+  }
+  .seis1a{
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 60px 800px;
+    background-color: rgba(218, 22, 22, 0);
+    float: left;
+    overflow: hidden;
+  }
+ 
+  .seis1>article,.seis1a>article{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(196, 93, 178,0.4);
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition-duration: 0s;
+  }
+  .seis1:hover>article,.seis1a:hover>article{
+  transform: scale(1);
+  transition-duration: .5s;
+  background-color: rgb(238, 58, 112);
+  
+  }
+  .seis1>article>h4,.seis1a>article>h4{
+    text-align: center;
+    font-family: 'Yeon Sung', cursive;
+    color: rgb(48, 3, 24);
+    font-size: 25px;
+    transform: scale(0);
+    transition-duration: 0.5s;
+    transition-delay: .6s;
+    overflow: hidden;
+  }
+  .seis1:hover>article>h4,.seis1a:hover>article>h4{
+    transform: scale(1);
+  }
+  .seis1>article>p,.seis1a>article>p{
+    text-align: justify;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-family: 'Yeon Sung', cursive;
+    color: rgb(145, 9, 31);
+    transform: scale(0);
+    transition-duration: 0.5s;
+    transition-delay: .6s;
+  }
+  .seis1:hover>article>p,.seis1a:hover>article>p{
+    transform: scale(1);
+  }
+  .seis1>article>a,.seis1a>article>a{
+    margin: 25px 150px;
+    margin-top: 180px;
+    padding: 0;
+    background-color: rgb(221, 19, 113);
+    color: rgb(48, 3, 24);
+    transform:scale(0) rotate(720deg);
+    transition-duration: .5s;
+    transition-delay:1s;
+    font-family: 'Yeon Sung', cursive;
+  }
+  .seis1:hover>article>a,.seis1a:hover>article>a{
+    transform:scale(1) rotate(0deg);
+  
+  }
+
+
+  
+.siete1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 60px 150px;
+  background-color: rgba(218, 22, 22, 0);
+  float: left;
+  overflow: hidden;
+}
+.siete1a{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 60px 800px;
+    background-color: rgba(218, 22, 22, 0);
+    float: left;
+    overflow: hidden;
+}
+.siete1>img,.siete1a>img{
+  position: absolute;
+  right: 0;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+.siete1:hover>img,.siete1a:hover>img{
+  transform: scale(2);
+  overflow: hidden;
+}
+.siete1>article,.siete1a>article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(53, 235, 8, 0.4);
+  width: 400px;
+  height: 250px;
+  transform: translate(-400px) rotate(360deg);
+  transition-duration: .5s;
+  transition-delay: .5s;
+  overflow: hidden;
+}
+.siete1:hover>article,.siete1a:hover>article{
+  transform: rotate(0deg);
+  transform: translateX(0px) rotate(0deg);
+  transition-duration: .5s;
+}
+.siete1>article>h4,.siete1a>article>h4{
+  text-align: center;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(5, 49, 20);
+  margin-top: 20px;
+  font-size: 25px;
+  transform: scale(0) translate(-500px);
+  transition-duration: 0.9s;
+  transition-delay: .9s;
+  overflow: hidden;
+}
+.siete1:hover>article>h4,.siete1a:hover>article>h4{
+  transform:scale(1) translateY(0px);
+}
+.siete1>article>p,.siete1a>article>p{
+  text-align: justify;
+  padding: 15px 40px;
+  font-size: 14px;
+  margin-top: 4px;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(138, 6, 6);
+  transform: scale(0) rotate(360deg);
+  transition-duration: .5s;
+  transition-delay: 1s;
+}
+.siete1:hover>article>p,.siete1a:hover>article>p{
+  transform: scale(1) rotate(0deg);
+}
+.siete1>article>a,.siete1a>article>a{
+  margin: 25px 150px;
+  margin-top: 180px;
+  background-color: rgb(20, 206, 119);
+  color: rgb(5, 49, 20);
+  padding: 0;
+  transform: translateY(-500px);
+  transition-duration: 1s;
+  transition-delay: 1s;
+  font-family: 'Yeon Sung', cursive;
+}
+.siete1:hover>article>a,.siete1a:hover>article>a{
+  transform: scale(1);
+}
+
+
+
+
+.ocho1{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: 60px 150px;
+  background-color: rgba(218, 22, 22, 0);
+  float: left;
+  overflow: hidden;
+}
+.ocho1a{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 60px 800px;
+    background-color: rgba(218, 22, 22, 0);
+    float: left;
+    overflow: hidden;
+}
+.ocho1>img,.ocho1a>img{
+  position: absolute;
+  right: 0;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+.ocho1:hover>img,.ocho1a:hover>img{
+  transform: scale(5);
+  overflow: hidden;
+}
+.ocho1>article,.ocho1a>article{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(236, 122, 189, 0.4);
+  width: 400px;
+  height: 250px;
+  transform: translate(800px,-800px);
+  transition-duration: .5s;
+  transition-delay: .5s;
+  overflow: hidden;
+}
+.ocho1:hover>article,.ocho1a:hover>article{
+  transform: translateX(0px);
+  transition-duration: .5s;
+}
+.ocho1>article>h4,.ocho1a>article>h4{
+  text-align: center;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(30, 2, 32);
+  margin-top: 20px;
+  font-size: 25px;
+  transform:  scale(0) rotate(1000deg);
+  transition-duration: 0.9s;
+  transition-delay: 1s;
+  overflow: hidden;
+}
+.ocho1:hover>article>h4,.ocho1a:hover>article>h4{
+  transform: scale(1) rotate(0deg);
+}
+.ocho1>article>p,.ocho1a>article>p{
+  text-align: justify;
+  padding: 15px 40px;
+  font-size: 14px;
+  margin-top: 4px;
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(92, 7, 42);
+  transform: translate(-1000px);
+  transition-duration: .5s;
+  transition-delay: 1s;
+}
+.ocho1:hover>article>p,.ocho1a:hover>article>p{
+  transform:translateX(0px);
+}
+.ocho1>article>a,.ocho1a>article>a{
+  margin: 25px 150px;
+  margin-top: 180px;
+  background-color: rgb(124, 51, 94);
+  color: rgb(30, 2, 32);
+  padding: 0;
+  transform: scale(0) translateY(-500px);
+  transition-duration: 1s;
+  transition-delay: 1s;
+  font-family: 'Yeon Sung', cursive;
+}
+.ocho1:hover>article>a,.ocho1a:hover>article>a{
+  transform: scale(1) translate(0px);
+}
+
